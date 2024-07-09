@@ -11,7 +11,7 @@
 	# Include NVidia Driver
 	../../modules/desktop/nvidia.nix
 	# Include Flakes Support
-	../../modules/desktop/flakesupport.nix
+	../../modules/flakesupport.nix
 	# Include Aliases
 	../../modules/desktop/aliases.nix
 	# Include System Packages

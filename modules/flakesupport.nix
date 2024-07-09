@@ -1,11 +1,6 @@
 { config, pkgs,... }:
 
 {
-imports = [
-	# Include the results of the hardware scan.
-	../hardware-configuration.nix
-];
-
 # ......
 
 # Enable the Flakes feature and the accompanying new nix command-line too
