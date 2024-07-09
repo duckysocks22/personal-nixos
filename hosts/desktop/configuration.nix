@@ -21,6 +21,8 @@
 	# Include Gacha games :3
 	../../modules/gacha.nix
     ];
+
+  stylix.enable = true;
   
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
