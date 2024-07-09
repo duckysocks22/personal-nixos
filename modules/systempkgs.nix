@@ -14,6 +14,7 @@
 		gparted
 		ntfs3g
 		vscode
+		base16-schemes
 	];
 
 }
