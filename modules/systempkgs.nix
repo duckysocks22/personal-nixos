@@ -13,6 +13,7 @@
 		mangohud
 		gparted
 		ntfs3g
+		vscode
 	];
 
 }
