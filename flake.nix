@@ -19,7 +19,7 @@
 		stylix.url = "github:danth/stylix";		
 	};
 
-	outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+	outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: {
 		# Desktop
 		nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
@@ -27,15 +27,15 @@
 			modules = [
 				# Import the previous configuration.nix
 				./hosts/desktop/configuration.nix
-				inputs.stylix.nixosModules.stylix
-				
+				stylix.nixosModules.stylix ./modules/stylix.nix
+
 				# Home-manager
 				home-manager.nixosModules.home-manager
 				{
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
 
-					home-manager.users.socks = import ./home.nix;
+					home-manager.users.socks = import ./home.nix;				
 				}
 			];
 		};
@@ -46,8 +46,13 @@
 			modules = [
 				# Import the previous configuration.nix
 				./hosts/laptop/configuration.nix
-				inputs.stylix.nixosModules.stylix
 			];
+		};
+
+		# Desktop Home-Manager
+		homeConfigurations."socks" = home-manager.lib.homeManagerConfiguration {
+			pkgs = nixpkgs.legacyPackages.x86_64-linux;
+			modules = [ ];
 		};
 	};
 }

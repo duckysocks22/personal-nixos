@@ -17,13 +17,10 @@
 	# Include System Packages
 	../../modules/systempkgs.nix
   # Include Stylix
-  ../../modules/stylix.nix
+  #../../modules/stylix.nix
 	# Include Gacha games :3
 	../../modules/gacha.nix
-    ];
-  
-  #Enable Stylix
-  stylix.enable = true;
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -62,12 +59,12 @@
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma6.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   # Enable CUPS to print documents.
@@ -148,6 +145,7 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
+
 # Enable libvirt daemon
 virtualisation.libvirtd = {
 	enable = true;

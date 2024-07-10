@@ -18,6 +18,7 @@
 		unetbootin
 		protonvpn-gui
 		cantarell-fonts
+		kitty
 	];
 
 }
