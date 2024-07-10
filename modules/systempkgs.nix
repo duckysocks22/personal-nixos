@@ -17,6 +17,7 @@
 		base16-schemes
 		bibata-cursors
 		unetbootin
+		protonvpn-gui
 	];
 
 }
