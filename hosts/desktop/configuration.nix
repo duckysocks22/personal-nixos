@@ -22,6 +22,9 @@
 	../../modules/gacha.nix
     ];
   
+  #Enable Stylix
+  stylix.enable = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
