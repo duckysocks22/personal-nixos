@@ -6,7 +6,6 @@
 		qemu_kvm
 		virt-manager
 		syncthing
-		wezterm
 		gamemode
 		zram-generator
 		goverlay
@@ -18,6 +17,7 @@
 		bibata-cursors
 		unetbootin
 		protonvpn-gui
+		cantarell-fonts
 	];
 
 }

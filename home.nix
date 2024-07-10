@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ... }:
 
 {
+
   # TODO please change the username & home directory to your own
   home.username = "socks";
   home.homeDirectory = "/home/socks";
