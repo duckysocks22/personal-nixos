@@ -25,5 +25,14 @@
 			};
 		};
 	});
+
+	programs.sleepy-launcher.package = inputs.aagl.packages.x86_64-linux.sleepy-launcher.override (old: {
+		unwrapped = old.unwrapped.override {
+			customIcon = builtins.fetchurl {
+				url = "https://static.wikia.nocookie.net/zenless-zone-zero/images/0/07/Zenless_Zone_Zero_Ridu_Stroll_Sticker_Pack_1_Ellen.png";
+				sha256 = "1i2bi444yc25xd3yb960fxrhz6c1q0csdzajyfra8vaarivpmhkn";
+			};
+		};
+	});
 }
 
