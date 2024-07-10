@@ -16,10 +16,15 @@
 	../../modules/laptop/aliases.nix
 	# Include System Packages
 	../../modules/systempkgs.nix
+  # Include Stylix
+  ../../modules/stylix.nix
 	# Include Gacha games :3
 	../../modules/gacha.nix
     ];
   
+  # Enable stylix
+  stylix.enable = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
