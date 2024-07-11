@@ -21,6 +21,12 @@
         terminal = 0.8;
     };
 
+    stylix.cursor = {
+        package = pkgs.gnome.adwaita-icon-theme;
+        name = "Adwaita";
+        size = 24;
+    };
+
     stylix.fonts = {
         monospace = {
             package = pkgs.cantarell-fonts;
