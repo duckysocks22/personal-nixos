@@ -70,7 +70,6 @@
   services.xserver = {
     xkb.layout = "us";
     xkb.variant = "";
-    desktopManager.gnome.enable = true;
   };
 
   # Enable CUPS to print documents.
