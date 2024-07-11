@@ -4,6 +4,12 @@
 
     stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
     stylix.image = ../images/grace_background.jpg;
+
+    stylix.cursor = {
+        package = pkgs.gnome.adwaita-icon-theme;
+        name = "Adwaita";
+        size = 24;
+    };
     
     home-manager.sharedModules = [{
     
@@ -19,12 +25,6 @@
     stylix.opacity = {
         desktop = 0.5;
         terminal = 0.8;
-    };
-
-    stylix.cursor = {
-        package = pkgs.gnome.adwaita-icon-theme;
-        name = "Adwaita";
-        size = 24;
     };
 
     stylix.fonts = {
