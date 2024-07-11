@@ -21,10 +21,10 @@
     stylix.targets.vesktop.enable = false;
     stylix.targets.vscode.enable = true;
     stylix.targets.gtk.enable = true;
+    stylix.targets.mangohud.enable = true;
 
     stylix.opacity = {
-        desktop = 0.5;
-        terminal = 0.8;
+        terminal = 0.2;
     };
 
     stylix.fonts = {
