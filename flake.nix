@@ -46,6 +46,16 @@
 			modules = [
 				# Import the previous configuration.nix
 				./hosts/laptop/configuration.nix
+				stylix.nixosModules.stylix ./modules/stylix.nix
+
+			# Home-manager
+				home-manager.nixosModules.home-manager
+				{
+					home-manager.useGlobalPkgs = true;
+					home-manager.useUserPackages = true;
+					home-manager.backupFileExtension = "backup";
+					home-manager.users.socks = import ./home.nix;				
+				}
 			];
 		};
 

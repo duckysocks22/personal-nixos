@@ -17,10 +17,10 @@
 	# Include System Packages
 	../../modules/systempkgs.nix
   # Include Stylix
-  ../../modules/stylix.nix
+  #../../modules/stylix.nix
 	# Include Gacha games :3
 	../../modules/gacha.nix
-    ];
+  ];
   
   # Enable stylix
   stylix.enable = true;
@@ -62,12 +62,13 @@
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma6.enable = true;
+  #services.xserver.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
     xkbVariant = "";
+    desktopManager.gnome.enable = true;
   };
 
   # Enable CUPS to print documents.
