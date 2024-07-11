@@ -11,17 +11,14 @@
 
     stylix.targets.firefox.enable = true;
     stylix.targets.kitty.enable = true;
-    stylix.targets.kde.enable = true;
-    stylix.targets.vesktop.enable = true;
+    stylix.targets.gnome.enable = true;
+    stylix.targets.vesktop.enable = false;
     stylix.targets.vscode.enable = true;
-    stylix.opacity.applications = 0.2;
-    stylix.opacity.desktop = 0.2;
     stylix.targets.gtk.enable = true;
 
-    stylix.cursor = {
-        package = pkgs.gnome.adwaita-icon-theme;
-        name = "Adwaita";
-        size = 32;
+    stylix.opacity = {
+        desktop = 0.5;
+        terminal = 0.8;
     };
 
     stylix.fonts = {
