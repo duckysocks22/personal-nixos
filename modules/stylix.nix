@@ -15,7 +15,7 @@
     
     stylix.autoEnable = false;  
 
-    stylix.targets.firefox.enable = false;
+    stylix.targets.firefox.enable = true;
     stylix.targets.kitty.enable = true;
     stylix.targets.gnome.enable = true;
     stylix.targets.vesktop.enable = false;
