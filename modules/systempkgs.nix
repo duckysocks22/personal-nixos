@@ -15,8 +15,8 @@
 		vscode
 		base16-schemes
 		bibata-cursors
-		unetbootin
 		protonvpn-gui
+		gnome-multi-writer
 		cantarell-fonts
 		gnome.adwaita-icon-theme
 		kitty
