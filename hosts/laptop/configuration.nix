@@ -65,8 +65,12 @@
   #services.xserver.desktopManager.plasma6.enable = true;
 
   # Enable the Gnome Desktop Environment
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
+
+  # Enable the XFCE Desktop Environment
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
 
   # Configure keymap in X11
   services.xserver = {

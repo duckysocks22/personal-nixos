@@ -13,7 +13,10 @@
 	# Icons
 	programs.anime-game-launcher.package = inputs.aagl.packages.x86_64-linux.anime-game-launcher.override (old: {
 		unwrapped = old.unwrapped.override {
-			customIcon = /etc/nixos/Icons/furina-icon.png;
+			customIcon = builtins.fetchurl {
+				url = "https://cdn3.emoji.gg/emojis/8408-furina.png";
+				sha256 = "fb3b23576007c7b5a18dd421283bc02851d8997054ff5a302f41d709cea62bea";
+			};
 	};
 	});
 	
