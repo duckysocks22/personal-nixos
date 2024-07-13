@@ -27,12 +27,12 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/mnt/Plus" =
+  fileSystems."/home/Socks/mnt/Plus" =
     { device = "/dev/disk/by-uuid/73f937d0-6ba3-4b0e-9af7-20a903a6a042";
       fsType = "ext4";
     };
 
-  fileSystems."/mnt/Extra" =
+  fileSystems."/home/Socks/mnt/Extra" =
     { device = "/dev/disk/by-uuid/23dd512b-044c-478a-9c23-e9d073fb29f7";
       fsType = "ext4";
     };
