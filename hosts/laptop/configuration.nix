@@ -16,8 +16,8 @@
 	../../modules/laptop/aliases.nix
 	# Include System Packages
 	../../modules/systempkgs.nix
-  # Include Stylix
-  #../../modules/stylix.nix
+  # Include GNOME Extensions
+  ../../modules/gnomeExtensions.nix
 	# Include Gacha games :3
 	../../modules/gacha.nix
   ];
