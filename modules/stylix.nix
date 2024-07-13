@@ -16,11 +16,11 @@
     stylix.autoEnable = false;  
 
     stylix.targets.firefox.enable = true;
-    stylix.targets.kitty.enable = true;
-    stylix.targets.gnome.enable = true;
+    stylix.targets.kitty.enable = false;
     stylix.targets.vesktop.enable = false;
     stylix.targets.vscode.enable = true;
     stylix.targets.gtk.enable = true;
+    stylix.targets.gnome.enable = true;
     stylix.targets.mangohud.enable = true;
 
     stylix.opacity = {

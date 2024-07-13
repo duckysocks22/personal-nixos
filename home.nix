@@ -26,6 +26,11 @@
     userEmail = "jjones213067@proton.me";
   };
 
+  home.sessionVariables = {
+    MOZ_ENABLE_WAYLAND=0;
+    
+  };
+
   programs.bash = {
     enable = true;
     enableCompletion = true;
