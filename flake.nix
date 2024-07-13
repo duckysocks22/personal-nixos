@@ -15,11 +15,17 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
+		# lix
+		lix-module = {
+			url = "https://git.lix.systems/lix-project/nixos-module/archive/2.90.0.tar.gz";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
 		# Stylix
 		stylix.url = "github:danth/stylix";		
 	};
 
-	outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: {
+	outputs = { self, nixpkgs, home-manager, lix-module, stylix, ... }@inputs: {
 		# Desktop
 		nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
@@ -37,8 +43,12 @@
 					home-manager.backupFileExtension = "backup";
 					home-manager.users.socks = import ./home.nix;				
 				}
+
+				# lix
+				lix-module.nixosModules.default
 			];
 		};
+		
 		# Laptop
 		nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
@@ -56,6 +66,9 @@
 					home-manager.backupFileExtension = "backup";
 					home-manager.users.socks = import ./home.nix;				
 				}
+
+				# lix
+				lix-module.nixosModules.default
 			];
 		};
 
