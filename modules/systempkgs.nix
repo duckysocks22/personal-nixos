@@ -20,8 +20,6 @@
 		cantarell-fonts
 		gnome.adwaita-icon-theme
 		kitty
-		blueberry
-		plasma-applet-volumewin7mixer
 	];
 
 }

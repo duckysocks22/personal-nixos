@@ -16,10 +16,10 @@
 	../../modules/desktop/aliases.nix
 	# Include System Packages
 	../../modules/systempkgs.nix
-  # Include Stylix
-  #../../modules/stylix.nix
 	# Include Gacha games :3
 	../../modules/gacha.nix
+  # Include Gnome Extensions
+  ../../modules/gnomeExtensions.nix
   ];
 
   # Bootloader.
