@@ -19,7 +19,7 @@
 		gnome-multi-writer
 		cantarell-fonts
 		gnome.adwaita-icon-theme
-		kitty
+		alacritty
 	];
 
 }
