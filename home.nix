@@ -16,7 +16,8 @@
     xz
     unzip
     p7zip
- 
+    
+    clonehero
   ];
 
   # basic configuration of git, please change to your own
