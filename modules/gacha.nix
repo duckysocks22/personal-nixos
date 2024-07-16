@@ -37,5 +37,14 @@
 			};
 		};
 	});
+
+	programs.honkers-launcher.package = inputs.aagl.packages.x86_64-linux.honkers-launcher.override (old: {
+		unwrapped = old.unwrapped.override {
+			customIcon = builtins.fetchurl {
+				url = "https://i.imgur.com/dfPCe1x.png";
+				sha256 = "1zx7cc7nkjibmg2ln986g5nq967971y8w8bb6jwsn18nxhp6aylk";
+			};
+		};
+	});
 }
 
