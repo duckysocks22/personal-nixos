@@ -20,6 +20,8 @@
 		cantarell-fonts
 		gnome.adwaita-icon-theme
 		alacritty
+		jre8
+		openjdk8-bootstrap
 	];
 
 }
