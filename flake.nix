@@ -27,7 +27,7 @@
 
 	outputs = { self, nixpkgs, home-manager, lix-module, stylix, ... }@inputs: {
 		# Desktop
-		nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
+		nixosConfigurations.doggy-nix = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
 			specialArgs = { inherit inputs; };
 			modules = [
