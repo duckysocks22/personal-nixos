@@ -8,5 +8,6 @@
 	nixhwconf = "sudo nano ~/personal-nixos/hosts/desktop/hardware-configuration.nix";
 	syspkgs = "sudo nano ~/personal-nixos/modules/systempkgs.nix";
 	flakeconf = "sudo nano ~/personal-nixos/etc/nixos/flake.nix";
+	techniclauncher = "java -jar ~/personal-nixos/executables/TechnicLauncher.jar";
 	};
 }
