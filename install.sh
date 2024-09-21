@@ -2,10 +2,10 @@
 
 set -e
 
-dir="$dirname "$(readlink -f "$0")")"
+dir="$(dirname "$(readlink -f "$0")")"
 flakePath="${flakePath:-"$dir"}"
 
-nixCommand=(nix 0--experimental-features 'nix-command flakes' --accept-flake-config)
+nixCommand=(nix --experimental-features 'nix-command flakes' --accept-flake-config)
 logFormat=(--log-format bar-with-logs)
 
 helpMessage() {
