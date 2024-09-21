@@ -20,14 +20,14 @@
 	};
 	});
 	
-	programs.honkers-railway-launcher.package = inputs.aagl.packages.x86_64-linux.honkers-railway-launcher.override (old: {
-		unwrapped = old.unwrapped.override {
-			customIcon = builtins.fetchurl {
-				url = "https://static.wikia.nocookie.net/houkai-star-rail/images/a/af/Bailu_Sticker_03.png";		
-				sha256 = "0f7s29bfrkc43640r7kjy2nkisvykwkx0q69prhjqvdfw6b73n88";
-			};
-		};
-	});
+	#programs.honkers-railway-launcher.package = inputs.aagl.packages.x86_64-linux.honkers-railway-launcher.override (old: {
+	#	unwrapped = old.unwrapped.override {
+	#		customIcon = builtins.fetchurl {
+	#			url = "https://static.wikia.nocookie.net/houkai-star-rail/images/a/af/Bailu_Sticker_03.png";		
+	#			sha256 = "0f7s29bfrkc43640r7kjy2nkisvykwkx0q69prhjqvdfw6b73n88";
+	#		};
+	#	};
+	#});
 
 	programs.sleepy-launcher.package = inputs.aagl.packages.x86_64-linux.sleepy-launcher.override (old: {
 		unwrapped = old.unwrapped.override {
