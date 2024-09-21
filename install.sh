@@ -18,7 +18,7 @@ main(){
         sudo nixos-rebuild boot --fast --flake "$flakePath/.#$2" "${logFormat[@]}" "${@:3}"
         ;;
         --build)
-        if [ "$#" -lt 2]; then
+        if [ "$#" -lt 2 ]; then
             output="$(hostname)"
         else
             output="$2"
