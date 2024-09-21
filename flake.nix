@@ -72,6 +72,29 @@
 			];
 		};
 
+		# VM
+		nixosConfigurations.protogen-nix = nixpkgs.lib.nixosSystem {
+			system = "x86_64-linux";
+			specialArgs = { inherit inputs; };
+			modules = [
+				# Import the previous configuration.nix
+				./hosts/vm/configuration.nix
+				stylix.nixosModules.stylix ./modules/stylix.nix
+
+				# Home-manager
+				home-manager.nixosModules.home-manager
+				{
+					home-manager.useGlobalPkgs = true;
+					home-manager.useUserPackages = true;
+					home-manager.backupFileExtension = "backup";
+					home-manager.users.socks = import ./home.nix;				
+				}
+
+				# lix
+				lix-module.nixosModules.default
+			];
+		};
+
 		# Desktop Home-Manager
 		homeConfigurations."socks" = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.x86_64-linux;
